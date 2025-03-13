@@ -1,0 +1,10 @@
+SELECT
+   s.id,
+   s.name,
+   p.name AS parent_name
+FROM
+   student s
+LEFT JOIN
+   parent p
+ON
+   s.parent_id = p.id;
